@@ -180,7 +180,9 @@ body {
   margin-bottom: 30px;
 }
 
-.channel {
+.channel,
+.recommended,
+.foryou {
   position: relative;
   margin-bottom: 50px;
 }
@@ -196,21 +198,34 @@ body {
   margin-bottom: 30px;
 }
 
+.foryou-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #c2c2c2;
+  margin-left: 20px;
+  padding-top: 5px;
+}
 .channel-avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .channel-text {
   margin-left: 20px;
 }
 
-.video-card {
+.channel-video-card {
   width: 250px;
 }
 
-.video-thumb {
+.recommended-video-card {
+  width: 540px;
+}
+
+.channel-video-thumb {
   width: 250px;
   height: 150px;
   overflow: hidden;
@@ -218,11 +233,25 @@ body {
   position: relative;
 }
 
-.thumbnail {
+.recommended-video-thumb {
+  width: 540px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.channel-thumbnail {
   width: 250px;
   height: 150px;
   object-fit: cover;
 }
+.recommended-thumbnail {
+  width: 540px;
+  height: 250px;
+  object-fit: cover;
+}
+
 .video-duration {
   position: absolute;
   bottom: 10px;
@@ -284,4 +313,27 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 66px;
+}
+
+.subscribe-button {
+  position: absolute;
+  right: 255px;
+  top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ff0000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribers-count {
+  margin-left: 3px;
 }
