@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>YouTube</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header class="header">
@@ -18,7 +22,9 @@
             <span class="menu-line"></span>
             <span class="menu-line"></span>
         </button>
-        <img src="img/logo.svg" alt="YouTubeLogo" class="logo">
+        <a href="/">
+            <img src="img/logo.svg" alt="YouTubeLogo" class="logo">
+        </a>
         <div class="input-group">
             <input type="search" name="search" class="input-search" placeholder="Search">
             <button type="submit" class="button-search">
@@ -26,6 +32,11 @@
                     <use xlink:href="img/icons.svg#search"></use>
                 </svg>
             </button>
+        </div>
+        <div class="mobile-search">
+            <svg class="icon icon-search" width="19" height="19">
+                <use xlink:href="img/icons.svg#search"></use>
+            </svg>
         </div>
         <div class="icons">
             <a href="#" class="icons-link">
@@ -49,6 +60,43 @@
         </a>
         <!-- /.user -->
     </header>
+    <div class="mobile-sidebar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-home" width="20" height="19">
+                        <use xlink:href="img/icons.svg#home"></use>
+                    </svg>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-trending" width="20" height="19">
+                        <use xlink:href="img/icons.svg#trending"></use>
+                    </svg>
+                    <span class="nav-text">Trending</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-subscriptions" width="20" height="19">
+                        <use xlink:href="img/icons.svg#subscriptions"></use>
+                    </svg>
+                    <span class="nav-text">Subscriptions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-library" width="20" height="19">
+                        <use xlink:href="img/icons.svg#library"></use>
+                    </svg>
+                    <span class="nav-text">Library</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.mobile-sidebar -->
     <div class="container">
         <aside class="sidebar">
             <nav class="navi">
